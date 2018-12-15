@@ -8,18 +8,32 @@ import { FellowsService } from '../fellows.service';
 })
 export class FellowsComponent implements OnInit {
 
-  fellows: Object;
+  fellows: Fellow[];
 
-  constructor(private service: FellowsService) { }
+  constructor(private fellowsService: FellowsService) { }
 
   ngOnInit() {
     console.log('in ngOnInit in fellows component');
-    this.service.getFellows().subscribe(service => {
+    this.fellowsService.getFellows().subscribe(data => {
       console.log('in getFellows subscribe method in fellows component');
-      this.fellows = service;
-      console.log(this.service);
+      this.fellows = data;
+      console.log(data);
     });  
   }
 
+  // showFellows(){
+  //   this.fellowsService.getFellows().subscribe((fellows) => this.fellows = {
+  //     name: fellows['name'],
+  //     id: fellows['id'],
+  //     favoriteInstructor: fellows['favoriteInstructor']
+  //   } );
+  // }
 
+
+}
+// put in separate file in actual project
+export interface Fellow {
+  name: string;
+  id: string;
+  favoriteInstructor: string;
 }
