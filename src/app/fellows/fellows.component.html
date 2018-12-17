@@ -1,6 +1,13 @@
 <h1>Component</h1>
-<ul>
+<!-- <ul>
   <li *ngFor='let fellow of fellows'>
-    <p>{{ fellow.name }} {{ fellow.favoriteInstructor }}</p>
+    <p>{{ fellow.lastName }}, {{ fellow.firstName }}</p>
   </li>
-</ul>
+</ul> -->
+<table>
+  <tr>
+    <td *ngFor='let fellow of fellows'>
+      {{ fellow.lastName }}, {{ fellow.firstName }}
+    </td>
+  </tr>
+</table>

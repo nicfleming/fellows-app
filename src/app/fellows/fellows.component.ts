@@ -33,7 +33,8 @@ export class FellowsComponent implements OnInit {
 }
 // put in separate file in actual project
 export interface Fellow {
-  name: string;
+  firstName: string;
+  lastName: string;
   id: string;
-  favoriteInstructor: string;
+  location: string;
 }
