@@ -6,4 +6,19 @@ body{
 }
 td{
     border: 1px solid green;
+    padding: .93%;
+    margin: 1.86%;
+    &:hover {
+        background-color: grey;
+        padding-top: .46%;
+        border: 3px solid green;
+        #hover-content{
+            display: block;
+        }
+    }
+    #hover-content{
+        display: none;
+    }
 }
+
+

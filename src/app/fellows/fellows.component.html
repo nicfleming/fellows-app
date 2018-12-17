@@ -4,10 +4,13 @@
     <p>{{ fellow.lastName }}, {{ fellow.firstName }}</p>
   </li>
 </ul> -->
+<div class='display-fellows'>
 <table>
   <tr>
     <td *ngFor='let fellow of fellows'>
-      {{ fellow.lastName }}, {{ fellow.firstName }}
+      <span class='fellow-name'>{{ fellow.lastName }}, {{ fellow.firstName }}</span>
+      <span class='hover-content'>Location: {{ fellow.Location}}</span>
     </td>
   </tr>
 </table>
+</div>
