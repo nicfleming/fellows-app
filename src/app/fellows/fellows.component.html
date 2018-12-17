@@ -8,8 +8,8 @@
 <table>
   <tr>
     <td *ngFor='let fellow of fellows'>
-      <span class='fellow-name'>{{ fellow.lastName }}, {{ fellow.firstName }}</span>
-      <span class='hover-content'>Location: {{ fellow.Location}}</span>
+      <p><span class='fellow-name'>{{ fellow.lastName }}, {{ fellow.firstName }}</span></p>
+      <p><span class='hover-content'>Location: {{ fellow.location}}</span></p>
     </td>
   </tr>
 </table>
