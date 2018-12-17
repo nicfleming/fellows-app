@@ -1,4 +1,4 @@
-<h1>Component</h1>
+<h1>Engineering</h1>
 <!-- <ul>
   <li *ngFor='let fellow of fellows'>
     <p>{{ fellow.lastName }}, {{ fellow.firstName }}</p>
@@ -7,15 +7,15 @@
 <div class='display-fellows'>
 <table>
   <tr>
-    <td *ngFor='let fellow of fellows'>
+    <td class='wrap fellow' *ngFor='let fellow of fellows'>
       <p><span class='fellow-name'>{{ fellow.lastName }}, {{ fellow.firstName }}</span></p>
-      <p><span class='hover-content'>Location: {{ fellow.location}}</span></p>
+      <p><span class='hover-content'>{{ fellow.location}}</span></p>
     </td>
   </tr>
-  <tr> <!-- i think this might need to be another component -->
+  <!--<tr> 
     <td>
       <p>NAME: <strong><span class='uppercase'>{{ fellow.firstName }} {{fellow.lastName }}</span></strong></p>
     </td>
-  </tr>
-</table>
+  </tr> -->
+</table> 
 </div>
