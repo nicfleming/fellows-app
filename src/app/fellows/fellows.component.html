@@ -12,9 +12,9 @@
       <p><span class='hover-content'>Location: {{ fellow.location}}</span></p>
     </td>
   </tr>
-  <tr>
+  <tr> <!-- i think this might need to be another component -->
     <td>
-      <p>NAME: <strong>{{ fellow.firstName }} {{fellow.lastName }}</strong></p>
+      <p>NAME: <strong><span class='uppercase'>{{ fellow.firstName }} {{fellow.lastName }}</span></strong></p>
     </td>
   </tr>
 </table>

@@ -11,6 +11,8 @@ td{
     width: 20vw;
     padding: .93%;
     margin: 1.86%;
+    transition: padding-top 0.5s;
+    //-webkit-transition: 0.5s
     &:hover {
         background-color: grey;
         padding-top: .46%;
@@ -22,6 +24,9 @@ td{
     .hover-content{
         display: none;
     }
+}
+.uppercase{
+    text-transform: uppercase;
 }
 
 
