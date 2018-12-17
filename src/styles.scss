@@ -3,9 +3,12 @@ body{
     background-color: black;
     font-family: monospace;
     color: green;
+    box-sizing: border-box;
 }
 td{
     border: 1px solid green;
+    height: 10vw;
+    width: 20vw;
     padding: .93%;
     margin: 1.86%;
     &:hover {
