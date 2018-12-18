@@ -9,6 +9,7 @@ import { FellowsService } from '../fellows.service';
 export class FellowsComponent implements OnInit {
 
   fellows: Fellow[];
+  selectedFellow: Fellow;
 
   constructor(private fellowsService: FellowsService) { }
 
@@ -19,6 +20,11 @@ export class FellowsComponent implements OnInit {
       this.fellows = data;
       console.log(data);
     });  
+  }
+
+  // how to get the id from the table part i click?
+  selectFellow() { 
+    return this.selectedFellow.id;
   }
 
   // showFellows(){
